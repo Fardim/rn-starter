@@ -9,6 +9,7 @@ import ImageScreen from './src/screens/ImageScreen';
 import CounterScreen from './src/screens/CounterScreen';
 import ColorScreen from './src/screens/ColorScrren';
 import SquareScreen from './src/screens/SquareScreen';
+import TextScreen from './src/screens/TextScreen';
 
 const Stack = createStackNavigator();
 
@@ -33,6 +34,9 @@ function MyStack() {
         }} />
       <Stack.Screen name="Square" component={SquareScreen} options={{
           title: 'Square Screen',
+        }} />
+      <Stack.Screen name="Text" component={TextScreen} options={{
+          title: 'Text Screen',
         }} />
     </Stack.Navigator>
   );
